@@ -40,10 +40,10 @@ to setup
     set internal-characteristics generate-characteristics num-internal-characteristics Average_char Stdev_char ; create internal characteristics for each student
     set tolerance precision (random-float Max_judg) 2  ;setting up tolerance value for each student
     setxy random-xcor random-ycor ; spread turtles throughout the environment
-    set average_attraction_out []
-    set stdev_attraction_out []
-    set average_attraction_in []
-    set stdev_attraction_in []
+    set average_attraction_out 0
+    set stdev_attraction_out 0
+    set average_attraction_in 0
+    set stdev_attraction_in 0
   ]
   reset-ticks
 end
@@ -250,9 +250,9 @@ SLIDER
 158
 num-students
 num-students
-0
+2
 100
-40.0
+39.0
 1
 1
 NIL
@@ -299,7 +299,7 @@ Average_char
 Average_char
 0
 1
-0.5
+1.0
 0.1
 1
 NIL
@@ -314,7 +314,7 @@ Stdev_char
 Stdev_char
 0
 0.5
-0.3
+0.31
 0.01
 1
 NIL
@@ -329,7 +329,7 @@ Attitude
 Attitude
 0
 1
-0.5
+0.9
 0.1
 1
 NIL
@@ -344,7 +344,7 @@ Max_judg
 Max_judg
 0
 0.5
-0.3
+0.5
 0.05
 1
 NIL
